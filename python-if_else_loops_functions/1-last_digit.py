@@ -8,4 +8,9 @@ if number < 0:
     div *= -1
 else:
     div = number % 10
-print("Last digit of " + (f"{number}") + " is " + (f"{div}"))
+if div == 0:
+    print("Last digit of " + (f"{number}") + " is " + (f"{div}") + " and is 0")
+elif div > 5:
+    print("Last digit of " + (f"{number}") + " is " + (f"{div}") + " and is greater than 5")
+elif div < 6 and div != 0:
+    print("Last digit of " + (f"{number}") + " is " + (f"{div}") + " and is less than 6 and not 0")
