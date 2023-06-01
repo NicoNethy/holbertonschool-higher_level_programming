@@ -1,0 +1,5 @@
+#!/usr/bin/python3
+bbc = "{}{}"
+for i in range(0, 10):
+    for x in range(i + 1, 10):
+        print(bbc.format(i, x), end=", ")
