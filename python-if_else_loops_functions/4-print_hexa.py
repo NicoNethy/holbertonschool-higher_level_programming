@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-bbc = "{}"
+bbc = "{} = {}"
 for x in range(0, 99):
-    print(x , "=", bbc.format( hex(x)))
+    print(bbc.format(x, hex(x)))
