@@ -2,4 +2,4 @@
 bbc = "{}{}"
 for i in range(0, 10):
     for x in range(i + 1, 10):
-        print(bbc.format(i, x), end=", ")
+        print(bbc.format(i, x), end=", " if i < 8 else "\n")
