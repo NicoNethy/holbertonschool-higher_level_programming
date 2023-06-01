@@ -1,3 +1,4 @@
 #!/usr/bin/python3
+bbc = "{}"
 for x in range(97,123):
-    print(chr(x), end="")
+    print(bbc.format(chr(x)), end="")
