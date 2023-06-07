@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 import sys
 def print_list_integer(my_list=[]):
-    argc = len(my_list) - 1
-    if argc > 1:
-        for argc in range(len(my_list[0:])):
-            print("{:d}".format(my_list[arg]))
+    for i in range(len(my_list)):
+        print("{:d}".format(my_list[i]))
