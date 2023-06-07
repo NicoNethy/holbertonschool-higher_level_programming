@@ -5,4 +5,4 @@ if __name__ == "__main__":
     a = 1
     b = 2
     coca = add(a, b)
-    printf(bcc.format(a, b, coca))
+    print(bcc.format(a, b, coca))
