@@ -8,4 +8,3 @@ if __name__ == "__main__":
             res = res + int(x)
         count += 1
     print("{}".format(res))
-    
