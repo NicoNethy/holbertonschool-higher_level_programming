@@ -1,40 +1,25 @@
-The ``4-print_square`` module
-======================
+The ``5-text_indentation`` module
 
-Using ``print_square``
--------------------
+>>> text_indentation = __import__("5-text_indentation").text_indentation
 
-This is test for the print_square function. First import
-``print_square`` from the ``4-print_square`` module:
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
 
-    >>> print_square = __import__('4-print_square').print_square
+>>> text_indentation(19)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
 
-Now use it:
+>>> text_indentation("hola. ")
+hola.
+<BLANKLINE>
 
-    >>> print_square(4)
-    ####
-    ####
-    ####
-    ####
+>>> text_indentation("hola.")
+hola.
 
-    >>> print_square(0)
-
-    >>> print_square(-1)
-    Traceback (most recent call last):
-    ...
-    ValueError: size must be >= 0
-
-    >>> print_square(1.5)
-    Traceback (most recent call last):
-    ...
-    TypeError: size must be an integer
-
-    >>> print_square("AAAAA")
-    Traceback (most recent call last):
-    ...
-    TypeError: size must be an integer
-
-    >>> print_square()
-    Traceback (most recent call last):
-    ...
-    TypeError: print_square() missing 1 required positional argument: 'size'
+>>> text_indentation("Holberton.school")
+Holberton.
+<BLANKLINE>
+school
