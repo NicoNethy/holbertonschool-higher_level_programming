@@ -5,6 +5,6 @@
 def read_file(filename=""):
     """A function that reads a text file"""
 
-    with open(filename, encoding="utf-8") as archivio:
-        read_data = archivio.read()
-        print(read_data, end='')
+    with open(filename, "r") as x:
+        for i in x.readlines():
+            print("{}".format(i), end="")
